@@ -1,0 +1,11 @@
+<div class="box">
+  <%= @list.name %>
+
+  <ul>
+    <% @bookmarks.each do |bookmark| %>
+    <li><%= Movie.find(bookmark.movie_id).title %>: <%= bookmark.comment %> <%= link_to "Delete", bookmark_path(bookmark.id), method: :delete %></li>
+    <% end %>
+  </ul>
+
+  <p><%= link_to "Go back", lists_path %>
+</div>

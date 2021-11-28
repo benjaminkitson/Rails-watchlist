@@ -1,0 +1,20 @@
+
+<div class="box">
+    <%@lists.each do |list|%>
+        <div class="list-item">
+          <%= link_to list_path(list.id) do%>
+            <div class="name sub-item"><%= list.name %></div>
+          <%end%>
+          <%= link_to new_list_bookmark_path(list) do%>
+            <div class="add sub-item">Add a movie</div>
+          <%end%>
+          <%= link_to list_path(list.id), method: :delete  do%>
+            <div class="delete sub-item">Delete</div>
+          <%end%>
+        </div>
+    <% end %>
+
+
+
+  <%= link_to "Create new list", new_list_path %>
+</div>
