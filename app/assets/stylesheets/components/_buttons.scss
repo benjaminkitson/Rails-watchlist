@@ -21,11 +21,12 @@
   box-shadow: $watchlist-shadow;
   height: 50px;
   width: 150px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: $white-button-hover;
 }
 
 
 .lists-button:hover {
   background-color: rgb(11, 89, 11);
   color: white;
+  transition: $white-button-hover
 }
