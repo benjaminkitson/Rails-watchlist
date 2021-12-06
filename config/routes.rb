@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  get 'pages/home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'pages#home'
   resources :lists, only:[:index, :new, :create, :show, :destroy] do
     resources :bookmarks, only:[:new , :create]
   end
