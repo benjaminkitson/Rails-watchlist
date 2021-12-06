@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+
+.content-box {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+
+}
