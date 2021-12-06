@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 
 .content-box {
-  background-color: rgb(234, 244, 235);
+  background-color: $box-green;
   border-radius: $watchlist-radius;
   display: flex;
   justify-content: center;
@@ -10,6 +10,7 @@
   width: 50vw;
   height: 50vh;
   box-shadow: $watchlist-shadow;
+  margin-top: 100px;
 }
 
 .flex-container {

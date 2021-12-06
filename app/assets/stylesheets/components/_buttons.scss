@@ -26,7 +26,29 @@
 
 
 .lists-button:hover {
-  background-color: rgb(11, 89, 11);
+  background-color: $hover-green;
+  color: white;
+  transition: $white-button-hover
+}
+
+
+.home-button {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border-radius: $watchlist-radius;
+  box-shadow: $watchlist-shadow;
+  background-color: white;
+  color: black;
+  transition: $white-button-hover;
+  height: 150px;
+  width: 500px;
+}
+
+.home-button:hover {
+  background-color: $hover-green;
   color: white;
   transition: $white-button-hover
 }
