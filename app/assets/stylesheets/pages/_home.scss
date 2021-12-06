@@ -1,12 +1,33 @@
 // Specific CSS for your home-page
 
 .content-box {
-  background-color: white;
-  border-radius: 10px;
+  background-color: rgb(234, 244, 235);
+  border-radius: $watchlist-radius;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 50vw;
   height: 50vh;
+  box-shadow: $watchlist-shadow;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-size: 70px;
+  height: 170px;
+  margin-top: 20px;
+}
+
+.sub-heading {
+  font-size: 20px;
+  height: 50px;
+}
+
+.list-button-container {
+  height: 100px;
 }
