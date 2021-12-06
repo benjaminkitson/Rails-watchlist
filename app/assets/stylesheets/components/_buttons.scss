@@ -1,0 +1,31 @@
+.delete {
+  width: 100px;
+  border-radius: 0 10px 10px 0
+}
+
+.add {
+  width: 150px;
+}
+
+.name {
+  border-radius: 10px 0 0 10px;
+}
+
+.lists-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: rgb(230, 230, 230);
+  border-radius: $watchlist-radius;
+  box-shadow: $watchlist-shadow;
+  height: 50px;
+  width: 150px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.lists-button:hover {
+  background-color: rgb(11, 89, 11);
+  color: white;
+}
