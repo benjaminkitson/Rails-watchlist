@@ -1,0 +1,21 @@
+.delete {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.add {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.name {
+  border-radius: 10px 0 0 10px;
+}
+
+.add {
+  border-radius: 0
+}
+
+.delete {
+  border-radius: 0 10px 10px 0
+}
