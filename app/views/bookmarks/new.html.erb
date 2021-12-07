@@ -1,16 +1,14 @@
 <div class="bookmark-form-box">
-  <div class="form-div">
-    <%= form_for [@list, @bookmark] , :url => list_bookmarks_path, html: { class: "form-class" } do |f|%>
-      <div class="dropdown form-element">
-        <%=f.select :movie_id, @movies.map{|movie| [movie.title, movie.id] }, {}, { class: "form-class" } %>
-      </div>
-      <div class="form-element">
-        <%=f.text_field :comment, { class: "form-class" } %>
-        <span><%= @bookmark.errors.messages[:comment].first if @bookmark.errors.any? %> </span>
-      </div>
-      <div class="form-element">
-        <%= f.submit "Add to list", { class: "submit-button" } %>
-      </div>
-    <% end %>
-  </div>
+  <%= form_for [@list, @bookmark] , :url => list_bookmarks_path, html: { class: "form-class" } do |f|%>
+    <div class="dropdown form-element">
+      <%=f.select :movie_id, @movies.map{|movie| [movie.title, movie.id] }, {}, { class: "form-class" } %>
+    </div>
+    <div class="form-element">
+      <%=f.text_field :comment, { class: "form-class" } %>
+      <span><%= @bookmark.errors.messages[:comment].first if @bookmark.errors.any? %> </span>
+    </div>
+    <div class="form-element">
+      <%= f.submit "Add to list", { class: "submit-button" } %>
+    </div>
+  <% end %>
 </div>
