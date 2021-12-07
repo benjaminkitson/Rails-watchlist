@@ -50,7 +50,8 @@
 .lists-button:hover {
   background-color: $hover-green;
   color: white;
-  transition: $white-button-hover
+  transition: $white-button-hover;
+  box-shadow: $hover-glow
 }
 
 .new-list-button {
