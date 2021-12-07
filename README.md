@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- An early Rails project from the LeWagon Web Development boot camp
 
-Things you may want to cover:
+- A simple browser-based app allowing the user to create watchlists of movies
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Mainly used now as a sandbox for practicing front-end and trying out CSS ideas
