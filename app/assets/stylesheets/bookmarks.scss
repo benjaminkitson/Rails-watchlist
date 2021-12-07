@@ -2,6 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.bookmark-form-box {
+  background-color: $box-green;
+  border-radius: $watchlist-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+  box-shadow: $watchlist-shadow;
+  margin-top: 25vh;
+}
+
+
 .form-div {
   display: flex;
   justify-content: center;
