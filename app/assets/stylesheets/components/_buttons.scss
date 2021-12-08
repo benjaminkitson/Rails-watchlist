@@ -66,11 +66,13 @@
   width: 50px;
   transition: box-shadow 0.3s, width 0.5s, height 0.3s, color 0.3s, background-color 0.3s;
   margin-top: 40px;
+  border: none
 }
 
 
 .new-list-button:hover {
   background-color: $hover-green;
+  box-shadow: $hover-glow;
   transition: box-shadow 0.3s, width 0.3s, height 0.3s, color 0.3s, background-color 0.3s;
   color: white;
   width: 150px;

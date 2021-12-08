@@ -1,0 +1,62 @@
+
+.bookmark-form-box {
+  background-color: $box-green;
+  border-radius: $watchlist-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+  box-shadow: $watchlist-shadow;
+  margin-top: 25vh;
+}
+
+.form-element {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.submit-button {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 5px 5px;
+  width: 200px;
+  height: 30px
+}
+
+.list-item {
+  display: flex;
+  background-color: darkslategray;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  border-radius: 50px;
+}
+
+.select .form-control {
+  appearance: none;
+  display: flex;
+  font-size: 30px;
+  width: 50%;
+  background: url(asset_path("vector_arrow.png"));
+  background-position: 96% 50%;
+  background-size: 10% 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.text .form-control {
+  width: 40vw;
+  height: 20vh;
+  padding: 1vw 2vw;
+}
