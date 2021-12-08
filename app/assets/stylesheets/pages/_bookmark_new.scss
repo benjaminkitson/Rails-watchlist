@@ -33,8 +33,24 @@
   background-color: darkslategray;
 }
 
-.test-class {
-  width: 500px;
-  height: 100px;
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  border-radius: 50px;
+}
+
+.select .form-control{
+  appearance: none;
+  display: flex;
   font-size: 30px;
+  width: 50%;
+  background: url(asset_path("blue_arrow.png"));
+  background-position: 96% 50%;
+  background-size: 10% 70%;
+  background-repeat: no-repeat;
+  background-color: white;
 }
