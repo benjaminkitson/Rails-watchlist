@@ -2,14 +2,14 @@
 <div class="bookmark-form-box">
   <%= simple_form_for [@list, @bookmark] , :url => list_bookmarks_path, html: { class: "form-class" } do |f|%>
     <div class="dropdown form-element">
-      <%=f.input :movie_id, collection: @movies %>
+      <%=f.input :movie_id, prompt: "Choose a movie", collection: @movies, label: false  %>
     </div>
     <div class="form-element">
-      <%=f.input :comment, { class: "form-class" } %>
+      <%=f.input :comment, as: :text, placeholder: "Add a comment", label: false, class: "form-class" %>
       <span><%= @bookmark.errors.messages[:comment].first if @bookmark.errors.any? %> </span>
     </div>
     <div class="form-element">
-      <%= f.submit "+", { class: "new-list-button" } %>
+      <%= f.submit "+", class: "new-list-button" %>
     </div>
   <% end %>
 </div>

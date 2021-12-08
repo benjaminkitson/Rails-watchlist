@@ -43,14 +43,20 @@
   border-radius: 50px;
 }
 
-.select .form-control{
+.select .form-control {
   appearance: none;
   display: flex;
   font-size: 30px;
   width: 50%;
-  background: url(asset_path("blue_arrow.png"));
+  background: url(asset_path("vector_arrow.png"));
   background-position: 96% 50%;
-  background-size: 10% 70%;
+  background-size: 10% 100%;
   background-repeat: no-repeat;
   background-color: white;
+}
+
+.text .form-control {
+  width: 40vw;
+  height: 20vh;
+  padding: 1vw 2vw;
 }
