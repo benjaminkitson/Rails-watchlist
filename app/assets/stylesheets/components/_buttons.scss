@@ -100,3 +100,27 @@
   color: white;
   transition: $white-button-hover
 }
+
+.new-bookmark-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: rgb(230, 230, 230);
+  border-radius: $watchlist-radius;
+  box-shadow: $watchlist-shadow;
+  height: 40px;
+  width: 50px;
+  transition: box-shadow 0.3s, width 0.5s, height 0.3s, color 0.3s, background-color 0.3s;
+  border: none
+}
+
+
+.new-bookmark-button:hover {
+  background-color: $hover-green;
+  box-shadow: $hover-glow;
+  transition: box-shadow 0.3s, width 0.3s, height 0.3s, color 0.3s, background-color 0.3s;
+  color: white;
+  width: 150px;
+  height: 50px;
+}

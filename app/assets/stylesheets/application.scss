@@ -13,6 +13,8 @@
 @import "pages/index";
 
 body {
+  min-height: 100vh;
+  width: 100vw;
   background-image: url(asset_path("theatre.jpeg"));
   background-size: 100% 100%;
   background-repeat: no-repeat;
