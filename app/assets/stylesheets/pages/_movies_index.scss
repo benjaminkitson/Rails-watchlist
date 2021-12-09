@@ -1,0 +1,28 @@
+.movie-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 25px;
+  padding: 10px;
+  width: 220px;
+  height: 380px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.movie-card-poster {
+  border-radius: 15px;
+}
+
+.title-div {
+  width: 135px;
+  margin-top: 5px;
+}
+
+.rating-div {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+}
