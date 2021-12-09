@@ -1,0 +1,57 @@
+.movies-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  font-size: 40px;
+}
+
+.movies-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 89vw;
+  height: 82vh;
+  row-gap: 2vh;
+  column-gap: 2vw;
+  background-color: transparent;
+  padding: 3vh 2vw;
+  overflow-y: scroll;
+}
+
+.movie-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 25px;
+  padding: 20px 25px;
+  width: 280px;
+  height: 420px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: $watchlist-shadow
+}
+
+.movie-card:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: $watchlist-shadow-hover
+}
+
+.movie-card-poster {
+  border-radius: 15px;
+}
+
+.title-div {
+  width: 165px;
+  margin-top: 5px;
+}
+
+.rating-div {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+}

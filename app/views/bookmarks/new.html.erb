@@ -1,6 +1,6 @@
 
 <div class="bookmark-form-box">
-<div class="new-bookmark-heading">Add a movie to <%=@list.name%>:</div>
+<div class="new-bookmark-heading">Add a movie to <em><%=@list.name%></em> :</div>
   <%= simple_form_for [@list, @bookmark] , :url => list_bookmarks_path, html: { class: "form-class" } do |f|%>
     <div class="dropdown form-element movie-div">
       <%=f.input :movie_id, prompt: "Choose a movie", collection: @movies, label: false  %>
