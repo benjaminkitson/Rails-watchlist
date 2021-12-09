@@ -8,16 +8,19 @@
 
 .movies-div {
   display: flex;
+  justify-self: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 89vw;
-  height: 82vh;
+  width: 100vw;
+  height: 85vh;
+  padding: 3vh 5vw 0;
   row-gap: 2vh;
   column-gap: 2vw;
   background-color: transparent;
-  padding: 3vh 2vw;
   overflow-y: scroll;
+  mask:linear-gradient(transparent, #fff 2%);
 }
+
 
 .movie-card {
   position: relative;
@@ -46,12 +49,12 @@
 
 .title-div {
   width: 165px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .rating-div {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: 25px;
   font-size: 14px;
 }
