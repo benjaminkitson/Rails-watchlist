@@ -1,20 +1,22 @@
-<div class="movies-heading">Here be movies:</div>
+<%= link_to "W.L", root_path, class: "home-button" %>
 
-  <div class="movies-div">
-    <%@movies.each do |movie|%>
-      <div class="movie-card">
-        <div class="poster-div">
-          <%= image_tag("http://image.tmdb.org/t/p/w200#{movie.poster_url}", class: "movie-card-poster")%>
+  <div class="movies-heading">Here be movies:</div>
+
+    <div class="movies-div">
+      <%@movies.each do |movie|%>
+        <div class="movie-card">
+          <div class="poster-div">
+            <%= image_tag("http://image.tmdb.org/t/p/w200#{movie.poster_url}", class: "movie-card-poster")%>
+          </div>
+          <div class="title-div">
+            <%= movie.title%>
+          </div>
+          <div class="rating-div">
+            <%= movie.rating%> / 10
+          </div>
         </div>
-        <div class="title-div">
-          <%= movie.title%>
-        </div>
-        <div class="rating-div">
-          <%= movie.rating%> / 10
-        </div>
-      </div>
-    <% end %>
-  </div>
+      <% end %>
+    </div>
 
 
 <%# <% raise %>
