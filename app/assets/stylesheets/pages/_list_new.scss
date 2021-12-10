@@ -1,0 +1,16 @@
+.new-list-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  padding: 50px;
+  flex-direction: column;
+  box-shadow: $watchlist-shadow;
+  background-color: $box-green;
+  border-radius: $watchlist-radius;
+  margin-top: 170px;
+}
+
+.list-name-div {
+  margin-bottom: 60px;
+}

@@ -1,8 +1,15 @@
 <%= link_to "W.L", root_path, class: "home-button" %>
 
-<div class="box">
-  <%= form_for @list do |f|%>
-    <%= f.text_field :name %>
-    <%= f.submit %>
+<div class="new-list-box">
+  <%= simple_form_for @list do |f|%>
+  <div class="list-name-div">
+    <%= f.input :name, placeholder: "List name", label: false %>
+  </div>
+
+  <!-- Submit button recycles classes from new bookmark -->
+
+  <div class="form-element nbb-div">
+    <%= f.submit "+", class: "new-bookmark-button" %>
+  </div>
   <% end %>
 </div>
