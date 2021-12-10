@@ -6,16 +6,15 @@
   justify-content: center;
   width: 300px;
   height: 50px;
-  // box-shadow: $watchlist-shadow-hover;
   z-index: 0;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  transition: $white-button-hover;
 }
 
 .sub-item:hover {
   transition: $white-button-hover;
   background-color: $hover-green;
   color: white;
-  // box-shadow: $watchlist-shadow-hover;
   z-index: 999;
 }
 
@@ -100,24 +99,27 @@
 
 
 .home-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
   font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
   border-radius: $watchlist-radius;
   box-shadow: $watchlist-shadow;
   background-color: white;
   color: black;
-  transition: $white-button-hover;
-  height: 150px;
-  width: 500px;
+  transition: $white-button-hover, box-shadow 0.3s;;
+  height: 80px;
+  width: 120px;
 }
 
 .home-button:hover {
   background-color: $hover-green;
   color: white;
-  transition: $white-button-hover
+  transition: $white-button-hover, box-shadow 0.3s;
+  box-shadow: $hover-glow;
 }
 
 .new-bookmark-button {
