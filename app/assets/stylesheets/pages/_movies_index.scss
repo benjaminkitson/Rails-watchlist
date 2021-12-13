@@ -7,18 +7,16 @@
 }
 
 .movies-div {
-  display: flex;
-  justify-self: flex-end;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   height: 85vh;
-  padding: 3vh 5vw 0;
+  margin: 50px 80px;
+  padding: 30px 20px;
   row-gap: 2vh;
-  column-gap: 2vw;
+  column-gap: 2.5vw;
   background-color: transparent;
   overflow-y: scroll;
-  mask:linear-gradient(transparent, #fff 2%);
+  mask:linear-gradient(transparent, #fff 2%, #fff 96%, #fff 2%, transparent);
 }
 
 
@@ -59,14 +57,18 @@
   font-size: 14px;
 }
 
-.movies-search {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 30vw;
-}
 
 .form-row {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+.movies-search-field {
+  width: 500px;
+  height: 50px;
+}
+
+.col {
+  width: auto;
 }
