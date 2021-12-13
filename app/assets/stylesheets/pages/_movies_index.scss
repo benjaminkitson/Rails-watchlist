@@ -58,3 +58,15 @@
   right: 25px;
   font-size: 14px;
 }
+
+.movies-search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+}

@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # PG Search added for movies
-gem 'pg_search', '~> 2.3.0'
+gem 'pg_search', '~> 2.3.5'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
