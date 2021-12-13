@@ -1,22 +1,33 @@
 <%= link_to "W.L", root_path, class: "home-button" %>
 
-  <div class="movies-heading">Here be movies:</div>
+  <div class="movies-heading">Movies</div>
 
-    <div class="movies-div">
-      <%@movies.each do |movie|%>
-        <div class="movie-card">
-          <div class="poster-div">
-            <%= image_tag("http://image.tmdb.org/t/p/w200#{movie.poster_url}", class: "movie-card-poster")%>
-          </div>
-          <div class="title-div">
-            <%= movie.title%>
-          </div>
-          <div class="rating-div">
-            <%= movie.rating%> / 10
-          </div>
+    <%= form_tag movies_path, method: :get do %>
+      <div class="form-row">
+        <div class="movies-search-field col">
+          <%= text_field_tag :query, params[:query], class: "form-control movies-search-field", placeholder: "Search for movies here!"%>
         </div>
-      <% end %>
-    </div>
+        <div class="movies-search-button-div col">
+          <%= submit_tag "Search", class: "movies-search-button" %>
+        </div>
+      </div>
+    <% end %>
+
+  <div class="movies-div">
+    <%@movies.each do |movie|%>
+      <div class="movie-card">
+        <div class="poster-div">
+          <%= image_tag("http://image.tmdb.org/t/p/w200#{movie.poster_url}", class: "movie-card-poster")%>
+        </div>
+        <div class="title-div">
+          <%= movie.title%>
+        </div>
+        <div class="rating-div">
+          <%= movie.rating%> / 10
+        </div>
+      </div>
+    <% end %>
+  </div>
 
 
 <%# <% raise %>
